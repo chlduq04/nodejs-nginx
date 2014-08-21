@@ -1,0 +1,288 @@
+li {
+	
+}
+
+.box {
+	padding: 2px;
+	background-color: #F0F0F0;
+	cursor: pointer;
+	float: left;
+	width: 97px;
+	min-height: 60px;
+	border: 1px solid white;
+	overflow: hidden;
+	font-size: 16px;
+	font-family: fantasy;
+	line-height: 35px;
+	text-align: center;
+}
+
+.situation-info-value {
+	position: relative;
+}
+
+.line {
+	overflow: hidden;
+}
+
+.section {
+	overflow: hidden;
+}
+
+.situation {
+	
+}
+
+.non-situation {
+	background: black;
+}
+
+.sec-right {
+	float: right;
+}
+
+.sec-left {
+	float: left;
+}
+
+.sec-membership {
+	margin: 10px auto;
+	overflow: hidden;
+	min-width: 1300x;
+	max-width: 1500px;
+	padding: 15px;
+}
+
+.section.sec9 {
+	
+}
+
+.load {
+	margin-bottom: 25px;
+}
+
+.project-situation {
+	color: #ffffff;
+	background-color: #5dade2;
+}
+
+.new-situation {
+	color: #ffffff;
+	background-color: #E67E22;
+}
+
+.tooltip-inner {
+	overflow: hidden;
+	padding: 9px 9px;
+	width: 100%;
+	height: 100%;
+}
+
+.sec-search {
+	z-index: 1000;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+}
+
+.search-input {
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+}
+
+#search-btn {
+	float: left;
+}
+
+.search-find {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.clickbox {
+	color: #ffffff;
+	background-color: #58d68d;
+}
+
+.situation-status>a {
+	height: 41px;
+	padding-top: 12px;
+}
+
+.progress {
+	margin-bottom: 0px;
+}
+
+.btn-toolbar {
+	display: none;
+	float: left;
+	margin-left: 5px;
+	float: left;
+}
+
+.btn-lg {
+	width: 105px;
+	font-size: 15px;
+}
+
+.tab-manager {
+	width: 120px;
+	float: right;
+}
+
+#tab-input {
+	width: 100px;
+	margin-right: 5px;
+	float: right;
+}
+
+.main-content {
+	margin: 100px 20px;
+}
+
+.btn-reset-info {
+	width: 80px;
+	float: left;
+	margin-left: 10px;
+}
+
+.btn-edit-info {
+	float: left;
+	width: 80px;
+	margin-left: 10px;
+}
+
+.btn-add-info {
+	width: 80px;
+	margin-left: 10px;
+	float: left;
+}
+
+.btn-seat-info {
+	width: 80px;
+	margin-left: 10px;
+	float: left;
+}
+
+.reset-status {
+	margin-left: 10px;
+	float: left;
+}
+
+.situation-detail-info {
+	margin-bottom: 1px;
+	display: none;
+	border-radius: 20px;
+	background-color: #34495F;
+	border-left: 1px solid transparent;
+	overflow: hidden;
+	float: left;
+	padding: 0px 5px;
+	font-size: 11px;
+	margin-right: 2px;
+	line-height: 18px;
+	color: white;
+	display: none;
+}
+
+.section-detail-info {
+	overflow: hidden;
+	padding: 0px 5px;
+	font-size: 15px;
+	margin-right: 5px;
+	height: 20px;
+	line-height: 18px;
+	color: white;
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+}
+#tooltip-box-info {
+	top: 100px;
+	left: 700px;
+	display: block;
+	width: 200px;
+	height: 60px;
+	z-index: 3001;
+}
+
+.new-info-manager {
+	display: none;
+}
+
+#new-info-input {
+	float: left;
+	width: 100px;
+	margin-left: 5px;
+}
+
+#new-info-btn {
+	float: left;
+	width: 40px;
+	margin-left: 5px;
+}
+
+.del-info-value {
+	position: absolute;
+	right: -7px;
+	top: -5px;
+	padding: 0px;
+	margin: 0px;
+	width: 20px;
+	height: 20px;
+	z-index: 500;
+}
+
+.base-membership {
+	display: none;
+}
+
+.tab-status {
+	float: right;
+	overflow: hidden;
+}
+
+.input-box-tag {
+	padding: 12px 5px;
+	height: 10px;
+	width: 145px;
+	float: left;
+}
+
+.button-box-tag {
+	padding: 3px;
+	width: 30px;
+	float: left;
+	margin-left: 6px;
+}
+
+.tooltip-box-background {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 3000;
+}
+
+.section-info-panel {
+	padding: 5px;
+	width: 485px;
+	height: 265px;
+	border: 1px solid white;
+	float: left;
+	background: #48c9b0;
+	width: 485px;
+}
+
+.situation-infomation>a {
+	height: 41px;
+	padding-top: 12px;
+}

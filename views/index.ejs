@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../css/index/tutorial.css" rel="stylesheet" type="text/css" />
+<link href="../bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../bootstrap/css/flat-ui.css" rel="stylesheet" type="text/css" />
+<link href="../css/index/layout.css" rel="stylesheet" type="text/css" />
+<title><%= title %></title>
+</head>
+
+<body>	
+	<div class="tooltip-box-background">
+		<div id="tooltip-box-info" class="input-box-tooltip tooltip fade top in" >
+			<div class="tooltip-arrow"></div>
+			<div class="tooltip-inner">
+				<input type="text" value="" placeholder="Inactive" class="input-box-tag form-control">
+				<a href="#fakelink" id="button-box-tag" class="button-box-tag btn btn-block btn-lg btn-default">>></a>
+			</div>
+		</div>
+	</div>
+	<div class=tutorial>
+		<div class="tutorial-navi-top">
+			<div class="tnt-search-input"></div>
+			<div class="tnt-search-button"></div>
+			<div class="tnt-situation-button"></div>
+			<div class="tnt-tab-input"></div>
+			<div class="tnt-tab-button"></div>
+		</div>
+		<div class="tutorial-tab-content">
+			<div class="ttc-tab-navi"></div>
+			<div class="ttc-tab-content">
+				<div class="ttct-content-left"></div>
+				<div class="ttct-content-right"></div>
+			</div>
+		</div>
+	</div>
+	<% if( manager ){ %>
+	<div class="sec-search ">
+		<div class="form-group search-find">
+			<input type="text" id="search-input" class="search-input form-control" /> 
+			<input type="button" value="Search" class="btn btn-primary" id="search-btn" />
+			<a href="#fakelink" class="btn btn-block btn-lg btn-default btn-add-info">Add</a>
+			<div class="new-info-manager">
+				<input type="text" id="new-info-input" class="new-info-input form-control" /> 
+				<input type="button" value="+" class="btn btn-primary" id="new-info-btn" />
+			</div>
+			<a href="#fakelink" class="btn btn-block btn-lg btn-default btn-seat-info">Seat</a>
+			<div class="btn-toolbar">
+				<div class="btn-group situation-status">
+					<a class="btn btn-primary situation-status-value ssv-situation" href="#fakelink">
+						<span class="fui-check"></span>
+					</a> 
+					<a class="btn btn-primary situation-status-value ssv-non-situation" href="#fakelink">
+						<span class="fui-cross"></span>
+					</a> 
+					<a class="btn btn-primary situation-status-value ssv-new-situation" href="#fakelink">
+						<span class="fui-plus"></span>
+					</a> 
+					<a class="btn btn-primary situation-status-value ssv-project-situation" href="#fakelink">
+						<span class="fui-user"></span>
+					</a>
+				</div>
+
+				<div class="btn-group situation-infomation">
+					<a class="btn btn-primary situation-infomation-value siv-info-status" href="#fakelink">
+						<span class="fui-gear"></span>
+					</a>
+				</div>
+			</div>
+			<div class="btn-toolbar-reset">
+				<div class="btn-group reset-status">
+					<div class="active-pane-target active-target-home"></div>
+				</div>
+			</div>	
+			<div class="tab-manager">
+       		<a href="#fakelink" class="btn btn-block btn-lg btn-primary">New Tab</a>
+    	    </div>
+			<input type="text" id="tab-input" class="tab-input form-control" />
+		</div>
+
+		<div class="progress">
+			<div id="progress-bar" class="progress-bar" style="width: 0%;"></div>
+        </div>
+	</div>
+	<% } %>
+	<div class="main-content">
+		<div class="btn-group tab-status">
+			<a class="btn btn-default tab-status-value tsv-delete" href="#fakelink">
+				<span class="fui-cross"></span>
+				<span>제거</span>
+			</a> 
+			<a class="btn btn-default tab-status-value tsv-hidden" href="#fakelink">
+				<span class="fui-lock"></span>
+				<span>저장</span>
+			</a> 
+			<a class="btn btn-default tab-status-value tsv-publish" href="#fakelink">
+				<span class="fui-check-inverted-2"></span>
+				<span>엑셀</span>
+			</a> 
+		</div>	
+		<ul class="nav nav-tabs" role="tablist" id="myTab">
+			<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+		</ul>
+		
+		<div id="main-tab-content" class="tab-content">
+			<div class="publish-section">
+			</div>
+			<div class="base-membership" id="base-membership">
+				<div id="basic-sec-membership" class="sec-membership">
+					<div class="sec-left">
+						<div class="section-info-panel">
+						</div>
+						<div class="section sec9">
+							<div class="line">
+								<div class="box project-situation" ip="249 250" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="247 248" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="line">
+								<div class="box project-situation" ip="245 246" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="243 244" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box project-situation" ip="241 242" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="239 240" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="line">
+								<div class="box project-situation" ip="237 238" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="235 236" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+						</div>
+						<div class="section sec8">
+							<div class="line">
+								<div class="box situation" ip="233 234" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="231 232" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="229 230" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="227 228" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="225 226" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="223 224" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="221 222" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="219 220" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="217 218" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="215 216" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="213 214" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="211 212" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="209 210" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="207 208" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+						<div class="section sec7">
+							<div class="line">
+								<div class="box project-situation" ip="205 206" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="203 204" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="201 202" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="199 200" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="197 198" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="195 196" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="193 194" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box project-situation" ip="191 192" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="189 190" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="187 188" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="185 186" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="183 184" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="181 182" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="179 180" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="sec-right">
+						<div class="section secETC">
+							<div class="line">
+								<div class="box non-situation" ip="177 178" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="175 176" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="173 174" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="171 172" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="169 170" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="167 168" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec6">
+							<div class="line">
+								<div class="box situation" ip="165 166" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="163 164" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="161 162" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="159 160" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="157 158" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="155 154" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="153 152" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="151 150" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="149 150" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="147 148" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="145 146" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="143 144" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec5">
+							<div class="line">
+								<div class="box situation" ip="141 142" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="139 140" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="137 138" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="135 136" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="133 134" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="131 132" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="129 130" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="127 128" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="125 126" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="123 124" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="121 122" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="119 120" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec4">
+							<div class="line">
+								<div class="box situation" ip="117 118" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="115 116" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="113 114" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="111 112" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="109 110" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="107 108" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="105 106" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="103 104" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="101 102" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="99 100" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="97 98" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="95 96" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec3">
+							<div class="line">
+								<div class="box situation" ip="93 94" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="91 92" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="89 90" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="87 88" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="85 86" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="83 84" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="81 82" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="79 80" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="77 78" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="75 76" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="73 74" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="71 72" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec2">
+							<div class="line">
+								<div class="box situation" ip="69 70" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="67 68" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="65 66" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="63 64" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="61 62" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="59 60" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="57 58" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="55 56" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="53 54" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="51 52" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="49 50" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="47 48" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec1">
+							<div class="line">
+								<div class="box situation" ip="45 46" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="43 44" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="41 42" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="39 40" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="37 38" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="35 36" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="33 34" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="31 32" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="29 30" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="27 28" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="25 26" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec0">
+							<div class="line">
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="23 24" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="21 22" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="19 20" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane active" id="home">
+				<div id="basic-sec-membership" class="sec-membership">
+					<div class="sec-left">
+						<div class="section-info-panel">
+						</div>
+						<div class="section sec9">
+							<div class="line">
+								<div class="box project-situation" ip="249 250" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="247 248" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="line">
+								<div class="box project-situation" ip="245 246" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="243 244" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box project-situation" ip="241 242" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="239 240" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="line">
+								<div class="box project-situation" ip="237 238" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="235 236" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+						</div>
+						<div class="section sec8">
+							<div class="line">
+								<div class="box situation" ip="233 234" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="231 232" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="229 230" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="227 228" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="225 226" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="223 224" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="221 222" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="219 220" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="217 218" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="215 216" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="213 214" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="211 212" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="209 210" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="207 208" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+						<div class="section sec7">
+							<div class="line">
+								<div class="box project-situation" ip="205 206" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="203 204" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="201 202" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="199 200" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="197 198" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="195 196" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="193 194" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box project-situation" ip="191 192" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box project-situation" ip="189 190" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="187 188" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="185 186" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="183 184" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="181 182" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="179 180" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="sec-right">
+						<div class="section secETC">
+							<div class="line">
+								<div class="box non-situation" ip="177 178" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="175 176" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="173 174" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="171 172" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="169 170" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="167 168" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec6">
+							<div class="line">
+								<div class="box situation" ip="165 166" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="163 164" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="161 162" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="159 160" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="157 158" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="155 154" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="153 152" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="151 150" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="149 150" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="147 148" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="145 146" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="143 144" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec5">
+							<div class="line">
+								<div class="box situation" ip="141 142" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="139 140" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="137 138" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="135 136" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="133 134" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="131 132" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="129 130" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="127 128" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="125 126" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="123 124" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="121 122" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="119 120" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec4">
+							<div class="line">
+								<div class="box situation" ip="117 118" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="115 116" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="113 114" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="111 112" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="109 110" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="107 108" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="105 106" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="103 104" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="101 102" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="99 100" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="97 98" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="95 96" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec3">
+							<div class="line">
+								<div class="box situation" ip="93 94" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="91 92" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="89 90" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="87 88" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="85 86" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="83 84" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="81 82" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="79 80" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="77 78" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="75 76" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="73 74" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="71 72" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec2">
+							<div class="line">
+								<div class="box situation" ip="69 70" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="67 68" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="65 66" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="63 64" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="61 62" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="59 60" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="57 58" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="55 56" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="53 54" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="51 52" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="49 50" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="47 48" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec1">
+							<div class="line">
+								<div class="box situation" ip="45 46" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="43 44" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="41 42" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="39 40" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="37 38" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="35 36" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							<div class="load"></div>
+							<div class="line">
+								<div class="box situation" ip="33 34" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="31 32" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="29 30" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="27 28" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box situation" ip="25 26" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+						</div>
+			
+						<div class="section sec0">
+							<div class="line">
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="23 24" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="21 22" data-toggle="tooltip" data-placement="right" title=""></div>
+								<div class="box non-situation" ip="19 20" data-toggle="tooltip" data-placement="right" title=""></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul id="loglist" style="height: 200px; width: 400px;">
+		<li class="chatline"></li>
+	</ul>
+	<div>
+		<label><input id="chat_input" type="text"
+			style="width: 350px;" /></label> <label><input id="chat_submit"
+			type="button" value="Go" style="width: 50px;" /></label>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="../js/index/jquery.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap-select.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap-switch.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/flatui-checkbox.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/flatui-radio.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/jquery.tagsinput.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/jquery.placeholder.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+
+	<script type="text/javascript" src="../js/index/WebSocket.js"></script>
+
+	<script type="text/javascript" src="../js/index/setup.js"></script>
+
+	<script type="text/javascript" src="../js/index/setup_option.js"></script>
+	<% if( manager ){ %>
+	<script type="text/javascript" src="../js/index/setup_manager.js"></script>
+	<% } else { %>
+	<script type="text/javascript" src="../js/index/setup_client.js"></script>
+	<% } %>
+	
+</body>
+</html>

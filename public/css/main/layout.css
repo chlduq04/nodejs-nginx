@@ -1,0 +1,15 @@
+.login-screen {
+	overflow: hidden;
+	background-color: white;
+}
+
+.login-form {
+	width: 500px;
+	margin: 100px auto;
+}
+
+#error_report {
+	color: #ec7063;
+	font-size: 15px;
+	margin-bottom: 10px;
+}

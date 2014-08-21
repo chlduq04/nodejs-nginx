@@ -1,0 +1,55 @@
+.tutorial {
+	display:none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5000;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.tutorial-navi-top {
+	
+}
+
+.tnt-search-input {
+	
+}
+
+.tnt-search-button {
+	
+}
+
+.tnt-situation-button {
+	
+}
+
+.tnt-tab-input {
+	
+}
+
+.tnt-tab-button {
+	
+}
+
+.tutorial-tab-content {
+	
+}
+
+.ttc-tab-navi {
+	
+}
+
+.ttc-tab-content {
+	
+}
+
+.ttct-content-left {
+	
+}
+
+.ttct-content-right {
+	
+}
